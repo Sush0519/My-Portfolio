@@ -19,11 +19,11 @@
     />
   </head>
 
-  <body class="h-screen">
+  <body class="h-screen bg-[#faf5ff]">
     <!-- Container -->
     <div>
       <!-- Navbar -->
-      <nav class="p-5 w-full fixed bg-purple-400 flex z-50">
+      <nav class="p-5 w-full fixed bg-[#c084fc] flex z-50">
         <!-- Logo -->
         <div>
           <span class="text-white text-2xl">Susmita Nayak</span>
@@ -60,6 +60,24 @@
                 >Contact</a
               >
             </li>
+            <div
+              class="flex items-center"
+              id="toggleIcon"
+              onclick="toggleIcons()"
+            >
+              <img
+                id="sunIcon"
+                class="w-6 h-6"
+                src="/Images/sun.png"
+                alt="Sun Icon"
+              />
+              <img
+                id="moonIcon"
+                class="w-6 h-6 hidden"
+                src="/Images/moon.png"
+                alt="Moon Icon"
+              />
+            </div>
           </ul>
         </div>
         <!-- hamburger -->
@@ -110,10 +128,7 @@
       </nav>
 
       <!-- Home Section -->
-      <div
-        id="home"
-        class="flex border-dashed border-gray-500 justify-center h-screen border-2 overflow-hidden"
-      >
+      <div id="home" class="flex justify-center h-screen overflow-hidden">
         <div class="flex-col justify-center items-center flex px-8 py-2">
           <!-- Photo -->
           <div class="justify-center w-full items-center flex">
@@ -130,7 +145,7 @@
             <span class="text main-text">I'm</span>
             <span class="text sec-text"></span>
           </div>
-          <p class="text-lg md:text-2xl text-center pt-4">
+          <p class="text-lg md:text-2xl text-[#350764] text-center pt-4">
             Feel free to reach out if you're looking for someone with a passion
             <br />
             for creating intuitive and responsive web interfaces.
@@ -139,7 +154,7 @@
           <!-- Buttons -->
           <div class="flex pt-4 space-x-3">
             <button
-              class="text-lg md:text-xl border-2 border-purple-400 rounded-lg px-4 md:px-6 py-[2px] md:py-1 text-purple-400 hover:bg-purple-400 hover:text-white"
+              class="text-lg md:text-xl border-2 border-[#8e33ea] rounded-lg px-4 md:px-6 py-[2px] md:py-1 text-[#8e33ea] hover:bg-[#8e33ea] hover:text-white"
               data-target="contact"
               onclick="scrollToSection(event)"
             >
@@ -147,7 +162,7 @@
             </button>
             <a href="../SusmitaNayak_FE_Developer_Resume.pdf" download>
               <button
-                class="text-lg md:text-xl border-2 border-purple-400 rounded-lg px-4 md:px-6 py-[2px] md:py-1 text-purple-400 hover:bg-purple-400 hover:text-white"
+                class="text-lg md:text-xl border-2 border-[#8e33ea] rounded-lg px-4 md:px-6 py-[2px] md:py-1 text-[#8e33ea] hover:bg-[#8e33ea] hover:text-white"
               >
                 Download CV
               </button>
@@ -157,13 +172,10 @@
       </div>
 
       <!-- About Section -->
-      <div
-        id="about"
-        class="border-dashed from-sky-50 flex flex-col border-2 border-gray-600"
-      >
-        <span class="px-10 pt-5 text-2xl font-bold">About</span>
-        <p>
-          I'm a self-taught frontend developer with over 2 years of experience
+      <div id="about" class="flex flex-col">
+        <span class="px-10 pb-10 text-[#7822ce] text-4xl font-bold">ABOUT</span>
+        <p class="px-10 text-[#350764]">
+          I'm a self-taught frontend developer with over 3 years of experience
           creating responsive, interactive web projects. Driven by a passion for
           bringing ideas to life, I've honed my skills through hands-on work,
           turning concepts into impactful digital experiences. I'm now eager to
@@ -171,15 +183,15 @@
           that make a difference
         </p>
 
-        <div class="flex-wrap md:flex">
+        <div class="flex-wrap px-10 md:flex">
           <div>
-            <p class="text-lg flex-1 px-2">Oct 2024 — PRESENT</p>
+            <p class="text-lg text-[#d9b4fe] flex-1">Oct 2024 — PRESENT</p>
           </div>
-          <div class="flex-col flex-1 px-2">
-            <p class="text-xl font-semibold">
+          <div class="flex-col flex-1">
+            <p class="text-xl text-[#d9b4fe] font-semibold">
               Junior Developer Intern • Runforservice
             </p>
-            <p>
+            <p class="text-[#350764]">
               Specialize in creating responsive and user-friendly web pages for
               e-commerce platforms, collaborate with backend teams to ensure
               seamless API integration and accurate data rendering. Work closely
@@ -193,11 +205,10 @@
       </div>
 
       <!-- Skills Section -->
-      <div
-        id="skills"
-        class="animated-section border-dashed flex flex-col from-sky-50 border-2 border-gray-600"
-      >
-        <span class="px-10 font-bold text-2xl py-5">Skills</span>
+      <div id="skills" class="animated-section flex flex-col">
+        <span class="px-10 font-bold text-4xl text-[#7822ce] py-10"
+          >SKILLS</span
+        >
 
         <div
           class="grid grid-cols-1 md:grid-cols-3 gap-5 justify-around flex-wrap"
@@ -206,30 +217,32 @@
           <div
             class="opacity-0 transform translate-y-[-25%] transition-all duration-[1.5s] px-10 justify-center flex py-2 flex-col items-center flex-wrap"
           >
-            <span class="text-2xl my-2 font-bold">Languages</span>
+            <span class="skillTitle text-[#d9b4fe] text-2xl my-2 font-bold"
+              >Languages</span
+            >
             <div class="flex justify-center space-x-3 flex-wrap">
               <div
                 class="flex text-center m-2 shiny bg w-20 rounded-md px-2 py-4 items-center flex-col"
               >
-                <p class="pb-2 text-xs font-bold">HTML</p>
+                <p class="pb-2 text-xs text-[#511c87] font-bold">HTML</p>
                 <img class="w-10 h-10" src="/Images/Html logo.png" alt="" />
               </div>
               <div
                 class="flex text-center m-2 shiny bg w-20 rounded-md px-2 py-4 items-center flex-col"
               >
-                <p class="pb-2 text-xs font-bold">CSS</p>
+                <p class="pb-2 text-xs text-[#511c87] font-bold">CSS</p>
                 <img class="w-10 h-10" src="/Images/CSS logo.png" alt="" />
               </div>
               <div
                 class="flex text-center m-2 shiny bg rounded-md px-2 py-4 items-center flex-col"
               >
-                <p class="pb-2 text-xs font-bold">JAVASCRIPT</p>
+                <p class="pb-2 text-xs text-[#511c87] font-bold">JAVASCRIPT</p>
                 <img class="w-10 h-10" src="/Images/JS logo.png" alt="" />
               </div>
               <div
                 class="flex text-center m-2 shiny bg rounded-md px-2 py-4 items-center flex-col"
               >
-                <p class="pb-2 text-xs font-bold">TYPESCRIPT</p>
+                <p class="pb-2 text-xs text-[#511c87] font-bold">TYPESCRIPT</p>
                 <img
                   class="w-10 h-10"
                   src="/Images/Typescript logo.png"
@@ -239,19 +252,19 @@
               <div
                 class="flex text-center m-2 shiny w-20 bg rounded-md px-2 py-4 items-center flex-col"
               >
-                <p class="pb-2 text-xs font-bold">SHELL</p>
+                <p class="pb-2 text-xs text-[#511c87] font-bold">SHELL</p>
                 <img class="w-10 h-10" src="/Images/Shell scripting logo.png" />
               </div>
               <div
                 class="flex text-center m-2 shiny bg w-20 rounded-md px-2 py-4 items-center flex-col"
               >
-                <p class="pb-2 text-xs font-bold">SASS</p>
+                <p class="pb-2 text-xs text-[#511c87] font-bold">SASS</p>
                 <img class="w-10 h-10" src="/Images/sass logo.png" alt="" />
               </div>
               <div
                 class="flex text-center m-2 shiny bg w-20 rounded-md px-2 py-4 items-center flex-col"
               >
-                <p class="pb-2 text-xs font-bold">MYSQL</p>
+                <p class="pb-2 text-xs text-[#511c87] font-bold">MYSQL</p>
                 <img class="w-10 h-10" src="/Images/MySQL logo.png" alt="" />
               </div>
             </div>
@@ -261,27 +274,28 @@
           <div
             class="opacity-0 transform translate-y-[-25%] transition-all duration-[1.5s] px-10 flex py-2 items-center flex-wrap flex-col"
           >
-            <span class="text-2xl my-2 text-center font-bold"
+            <span
+              class="skillTitle text-2xl my-2 text-[#d9b4fe] text-center font-bold"
               >Libraries & Frameworks</span
             >
             <div class="flex justify-center space-x-3 flex-wrap">
               <div
                 class="flex text-center m-2 shiny bg w-20 rounded-md px-2 py-4 items-center flex-col"
               >
-                <p class="pb-2 text-xs font-bold">ReactJS</p>
+                <p class="pb-2 text-xs text-[#511c87] font-bold">ReactJS</p>
                 <img class="w-10 h-10" src="/Images/ReactJS logo.png" alt="" />
               </div>
 
               <div
                 class="flex text-center m-2 shiny bg w-20 rounded-md px-2 py-4 items-center flex-col"
               >
-                <p class="pb-2 text-xs font-bold">NextJS</p>
+                <p class="pb-2 text-xs text-[#511c87] font-bold">NextJS</p>
                 <img class="w-10 h-10" src="/Images/Nextjs logo.png" alt="" />
               </div>
               <div
                 class="flex text-center m-2 shiny bg rounded-md px-2 py-4 items-center flex-col"
               >
-                <p class="pb-2 text-xs font-bold">TAILWINDCSS</p>
+                <p class="pb-2 text-xs text-[#511c87] font-bold">TAILWINDCSS</p>
                 <img
                   class="w-10 h-10"
                   src="/Images/TailwindCSS logo.png"
@@ -292,13 +306,13 @@
               <div
                 class="flex text-center m-2 shiny bg w-20 rounded-md px-2 py-4 items-center flex-col"
               >
-                <p class="pb-2 text-xs font-bold">JQUERY</p>
+                <p class="pb-2 text-xs text-[#511c87] font-bold">JQUERY</p>
                 <img class="w-10 h-10" src="/Images/jQuery logo.png" alt="" />
               </div>
               <div
                 class="flex text-center m-2 shiny bg rounded-md px-2 py-4 items-center flex-col"
               >
-                <p class="pb-2 text-xs font-bold">BOOTSTRAP</p>
+                <p class="pb-2 text-xs text-[#511c87] font-bold">BOOTSTRAP</p>
                 <img
                   class="w-10 h-10"
                   src="/Images/Bootstrap logo.png"
@@ -312,32 +326,34 @@
           <div
             class="opacity-0 transform translate-y-[-25%] transition-all duration-[1.5s] flex px-10 py-2 items-center flex-col"
           >
-            <span class="text-2xl my-2 font-bold">Tools</span>
+            <span class="skillTitle text-[#d9b4fe] text-2xl my-2 font-bold"
+              >Tools</span
+            >
             <div class="flex justify-center space-x-3 flex-wrap">
               <div
                 class="flex text-center m-2 shiny bg w-20 rounded-md px-2 py-4 items-center flex-col"
               >
-                <p class="pb-2 text-xs font-bold">GITHUB</p>
+                <p class="pb-2 text-xs text-[#511c87] font-bold">GITHUB</p>
                 <img class="w-10 h-10" src="/Images/Github logo.png" alt="" />
               </div>
 
               <div
                 class="flex text-center m-2 shiny bg w-20 rounded-md px-2 py-4 items-center flex-col"
               >
-                <p class="pb-2 text-xs font-bold">LINUX</p>
+                <p class="pb-2 text-xs text-[#511c87] font-bold">LINUX</p>
                 <img class="w-10 h-10" src="/Images/Linux logo.png" alt="" />
               </div>
 
               <div
                 class="flex text-center m-2 shiny bg w-20 rounded-md px-2 py-4 items-center flex-col"
               >
-                <p class="pb-2 text-xs font-bold">FIGMA</p>
+                <p class="pb-2 text-xs text-[#511c87] font-bold">FIGMA</p>
                 <img class="w-10 h-10" src="/Images/Figma logo.png" alt="" />
               </div>
               <div
                 class="flex text-center m-2 shiny bg w-20 rounded-md px-2 py-4 items-center flex-col"
               >
-                <p class="pb-2 text-xs font-bold">Postman</p>
+                <p class="pb-2 text-xs text-[#511c87] font-bold">POSTMAN</p>
                 <img class="w-10 h-10" src="/Images/Postman logo.png" alt="" />
               </div>
             </div>
@@ -346,11 +362,10 @@
       </div>
 
       <!-- Project Section -->
-      <div
-        id="projects"
-        class="border-dashed z-0 container-slider relative from-sky-50 border-2 border-gray-600 py-2"
-      >
-        <span class="text-2xl px-10 font-bold">Projects</span>
+      <div id="projects" class="py-20 z-0">
+        <span class="text-4xl relative px-10 font-bold text-[#7822ce]"
+          >PROJECTS</span
+        >
         <div class="grid grid-cols-1 md:grid-cols-2 flex-wrap">
           <!-- Project Descp -->
           <div
@@ -358,14 +373,20 @@
             class="px-10 py-5 opacity-0 transform -translate-x-[15%] transition-all duration-[2.2s] flex flex-col items-center"
           >
             <!-- Heading -->
-            <span id="projectTitle" class="text-3xl font-extrabold text-white">
+            <span
+              id="projectTitle"
+              class="text-3xl font-extrabold text-[#d9b4fe]"
+            >
             </span>
             <!-- Info -->
-            <p id="projectDescription" class="text-center py-3 text-xl"></p>
+            <p
+              id="projectDescription"
+              class="text-center text-[#350764] py-3 text-xl"
+            ></p>
             <!-- Tech Stack -->
             <div
               id="techStackContainer"
-              class="flex flex-wrap justify-center text-white"
+              class="flex flex-wrap justify-center text-[#f3e8ff]"
             ></div>
           </div>
 
@@ -407,10 +428,11 @@
       </div>
 
       <!-- Contact Section  -->
-      <div
-        id="contact"
-        class="flex border-dashed border-gray-500 justify-center border-2"
-      >
+      <div id="contact" class="flex flex-col items-center justify-center">
+        <span
+          class="px-10 font-bold w-full items-start flex text-4xl text-[#7822ce] py-10"
+          >CONTACT</span
+        >
         <form
           id="contactForm"
           action="https://api.web3forms.com/submit"
@@ -525,7 +547,7 @@
       </div>
 
       <!-- Footer Section -->
-      <div class="border-dashed border-2 border-gray-600">
+      <div class="pt-10">
         <!-- Name -->
         <div class="flex w-full pt-3 justify-center items-center">
           <img class="w-60 h-60 object-cover" src="/Images/Logo.png" alt="" />
@@ -535,9 +557,11 @@
         <div class="px-10 py-4 mb-4 flex flex-wrap">
           <!-- Slogan Heading & Copyright -->
           <div class="w-full text-left lg:text-center lg:flex-1">
-            <p class="text-[55px] lg:text-7xl font-bold">Stay Coder!</p>
+            <p class="text-[55px] lg:text-7xl text-[#350764] font-bold">
+              Stay Coder!
+            </p>
             <!-- Copyright -->
-            <p class="py-4 text-lg">
+            <p class="py-4 text-[#a055f7] text-lg">
               Copyright &copy Susmita Nayak 2024. All rights reserved.
             </p>
           </div>
@@ -546,7 +570,9 @@
           <div
             class="flex items-start lg:items-center w-full lg:flex-1 py-2 flex-col"
           >
-            <p class="text-2xl text-left lg:text-center font-bold">
+            <p
+              class="text-2xl text-left lg:text-center text-[#350764] font-bold"
+            >
               Find Me on Social Media <br />
               Let’s Share Ideas and Insights!
             </p>
@@ -555,7 +581,7 @@
                 <img class="w-10" src="/Images/linkedin.png" alt=""
               /></a>
               <a href="https://x.com/CSSassyGirl">
-                <img class="w-8" src="/Images/Twitter (1).png" alt=""
+                <img class="w-8" src="/Images/Twitter.png" alt=""
               /></a>
               <a href="https://www.instagram.com/shcodify/">
                 <img class="w-9" src="/Images/instagram.png" alt=""
@@ -570,23 +596,20 @@
           <div
             class="flex w-full lg:flex-1 items-start lg:items-center flex-col"
           >
-            <p class="text-2xl font-bold">Explore</p>
+            <p class="text-2xl text-[#350764] font-bold">Explore</p>
             <div class="flex flex-col items-start">
               <!-- Individual list -->
-              <div class="flex text-lg space-x-2 items-center">
-                <img class="rotate-90" src="/Images/mouse.png" alt="" />
+              <div class="flex text-lg text-[#a055f7] space-x-2 items-center">
                 <a href="#" data-target="home" onclick="scrollToSection(event)"
                   >Home</a
                 >
               </div>
-              <div class="flex text-lg space-x-2 items-center">
-                <img class="rotate-90" src="/Images/mouse.png" alt="" />
+              <div class="flex text-lg text-[#a055f7] space-x-2 items-center">
                 <a href="#" data-target="about" onclick="scrollToSection(event)"
                   >About</a
                 >
               </div>
-              <div class="flex text-lg space-x-2 items-center">
-                <img class="rotate-90" src="/Images/mouse.png" alt="" />
+              <div class="flex text-lg text-[#a055f7] space-x-2 items-center">
                 <a
                   href="#"
                   data-target="skills"
@@ -594,8 +617,7 @@
                   >Skills</a
                 >
               </div>
-              <div class="flex text-lg space-x-2 items-center">
-                <img class="rotate-90" src="/Images/mouse.png" alt="" />
+              <div class="flex text-lg text-[#a055f7] space-x-2 items-center">
                 <a
                   href="#"
                   data-target="projects"
@@ -603,8 +625,7 @@
                   >Projects</a
                 >
               </div>
-              <div class="flex text-lg space-x-2 items-center">
-                <img class="rotate-90" src="/Images/mouse.png" alt="" />
+              <div class="flex text-lg text-[#a055f7] space-x-2 items-center">
                 <a
                   href="#"
                   data-target="contact"
@@ -698,7 +719,9 @@
       </div>
 
       <!-- Girl animation -->
-      <div class="animation-container w-52 h-52 bottom-0 right-0 fixed">
+      <div
+        class="animation-container hidden md:block w-52 h-52 bottom-0 right-0 fixed"
+      >
         <div class="box z-20">
           <div class="eye">
             <div class="pupil animate-bounce md:animate-none"></div>

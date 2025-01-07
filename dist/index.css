@@ -71,15 +71,15 @@ html {
 .text-container .text {
   font-size: 3rem;
   font-weight: 600;
-  color: purple;
+  color: #350764;
 }
 
 .text-container .sec-text {
   font-size: 3rem;
   font-weight: 600;
   margin: 0 10px;
-  color: #f1da54;
-  border-right: 2px solid rgb(208, 88, 219); /* Cursor effect */
+  color: #d9b4fe;
+  border-right: 2px solid #d9b4fe; /* Cursor effect */
   display: inline-block;
   white-space: nowrap; /* Prevents wrapping */
   overflow: hidden; /* Hides extra text while typing */
@@ -189,6 +189,9 @@ html {
 }
 
 /* Project Section */
+#projectTitle {
+  /* text-shadow: 0.5px 0.5px 3px rgb(141, 134, 134); */
+}
 
 .swiper-cube .swiper-cube-shadow {
   display: none;
@@ -224,7 +227,7 @@ html {
   border: 1px solid whitesmoke;
   font-size: 2dvw !important;
   font-weight: 500 !important;
-  color: rgb(183, 65, 241);
+  color: #511c87;
 }
 
 .swiper-pagination-bullet {
@@ -245,7 +248,7 @@ html {
 
 /* Skills Section */
 .bg {
-  background: linear-gradient(to right, #e9edbc, #f6fe0f);
+  background: linear-gradient(to right, #ead5ff, #a655f7);
 }
 
 .shiny {
@@ -256,17 +259,22 @@ html {
 .shiny::before {
   content: "";
   position: absolute;
-  height: 100px;
-  width: 20px;
+  height: 120px;
+  width: 15px;
   background: #f3f3f3;
-  box-shadow: 0 0 10px #fff;
+  box-shadow: 0 0 20px 5px #fff;
   filter: blur(1px);
   opacity: 0.9;
-  top: -7px;
+  top: -15px;
   transition: 1s;
   transform: rotate(-20deg) translateX(-60px);
 }
 
 .shiny:hover:before {
   transform: rotate(-20deg) translate(140px, 10px);
+}
+
+/* Skills Section  */
+.skillTitle {
+  /* text-shadow: 0.5px 0.5px 3px rgb(141, 134, 134); */
 }

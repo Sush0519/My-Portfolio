@@ -19,6 +19,19 @@ hamburger.addEventListener("click", function () {
   }
 });
 
+function toggleIcons() {
+  const sunIcon = document.getElementById("sunIcon");
+  const moonIcon = document.getElementById("moonIcon");
+
+  if (sunIcon.classList.contains("hidden")) {
+    sunIcon.classList.remove("hidden");
+    moonIcon.classList.add("hidden");
+  } else {
+    sunIcon.classList.add("hidden");
+    moonIcon.classList.remove("hidden");
+  }
+}
+
 // Home Section
 
 const secText = document.querySelector(".sec-text");
@@ -148,7 +161,7 @@ function updateDescription(id) {
       "my-2",
       "px-4",
       "py-2",
-      "bg-[#ba97c7]"
+      "bg-[#511c87]"
     );
     techItem.textContent = tech;
     techStackContainer.appendChild(techItem);
