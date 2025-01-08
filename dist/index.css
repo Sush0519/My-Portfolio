@@ -78,8 +78,8 @@ html {
   font-size: 3rem;
   font-weight: 600;
   margin: 0 10px;
-  color: #d9b4fe;
-  border-right: 2px solid #d9b4fe; /* Cursor effect */
+  color: #ffc0cb;
+  border-right: 2px solid #ffc0cb; /* Cursor effect */
   display: inline-block;
   white-space: nowrap; /* Prevents wrapping */
   overflow: hidden; /* Hides extra text while typing */
@@ -101,7 +101,7 @@ html {
 }
 
 .slider {
-  background-color: #f1da54;
+  background-color: #ffe3e7;
   width: 100%;
   height: var(--height);
   overflow: hidden;
@@ -248,7 +248,7 @@ html {
 
 /* Skills Section */
 .bg {
-  background: linear-gradient(to right, #ead5ff, #a655f7);
+  background: linear-gradient(to right, #ffe3e7, #ffa2b3);
 }
 
 .shiny {

@@ -161,7 +161,7 @@ function updateDescription(id) {
       "my-2",
       "px-4",
       "py-2",
-      "bg-[#511c87]"
+      "bg-[#d9b4fe]"
     );
     techItem.textContent = tech;
     techStackContainer.appendChild(techItem);
