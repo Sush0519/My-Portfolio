@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="dark" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -60,6 +60,7 @@
                 >Contact</a
               >
             </li>
+            <!-- Dark / Light Mode -->
             <div
               class="flex items-center"
               id="toggleIcon"
@@ -89,6 +90,25 @@
             id="hamburger-icon"
             class="fa-solid fa-burger text-[2rem] text-white"
           ></i>
+        </div>
+        <!-- Dark / Light Mode -->
+        <div
+          class="flex ml-2 items-center"
+          id="toggleIcon"
+          onclick="toggleIcons()"
+        >
+          <img
+            id="sunIcon"
+            class="w-6 h-6"
+            src="/Images/sun.png"
+            alt="Sun Icon"
+          />
+          <img
+            id="moonIcon"
+            class="w-6 h-6 hidden"
+            src="/Images/moon.png"
+            alt="Moon Icon"
+          />
         </div>
         <div
           id="menu"
@@ -145,7 +165,9 @@
             <span class="text main-text">I'm</span>
             <span class="text sec-text"></span>
           </div>
-          <p class="text-lg md:text-2xl text-[#350764] text-center pt-4">
+          <p
+            class="text-lg intro-text md:text-2xl text-[#350764] text-center pt-4"
+          >
             Feel free to reach out if you're looking for someone with a passion
             <br />
             for creating intuitive and responsive web interfaces.
@@ -154,7 +176,7 @@
           <!-- Buttons -->
           <div class="flex pt-4 space-x-3">
             <button
-              class="text-lg md:text-xl border-2 border-[#8e33ea] rounded-lg px-4 md:px-6 py-[2px] md:py-1 text-[#8e33ea] hover:bg-[#8e33ea] hover:text-white"
+              class="text-lg buttons md:text-xl border-2 border-[#8e33ea] rounded-lg px-4 md:px-6 py-[2px] md:py-1 text-[#8e33ea] hover:bg-[#8e33ea] hover:text-white"
               data-target="contact"
               onclick="scrollToSection(event)"
             >
@@ -162,7 +184,7 @@
             </button>
             <a href="../SusmitaNayak_FE_Developer_Resume.pdf" download>
               <button
-                class="text-lg md:text-xl border-2 border-[#8e33ea] rounded-lg px-4 md:px-6 py-[2px] md:py-1 text-[#8e33ea] hover:bg-[#8e33ea] hover:text-white"
+                class="text-lg buttons md:text-xl border-2 border-[#8e33ea] rounded-lg px-4 md:px-6 py-[2px] md:py-1 text-[#8e33ea] hover:bg-[#8e33ea] hover:text-white"
               >
                 Download CV
               </button>
@@ -173,8 +195,10 @@
 
       <!-- About Section -->
       <div id="about" class="flex flex-col">
-        <span class="px-10 pb-10 text-[#a20f40] text-4xl font-bold">ABOUT</span>
-        <p class="px-10 text-[#350764]">
+        <span class="px-10 section pb-10 text-[#a20f40] text-4xl font-bold"
+          >ABOUT</span
+        >
+        <p class="px-10 about-text text-[#350764]">
           I'm a self-taught frontend developer with over 3 years of experience
           creating responsive, interactive web projects. Driven by a passion for
           bringing ideas to life, I've honed my skills through hands-on work,
@@ -191,7 +215,7 @@
             <p class="text-xl text-[#fe6e8b] font-semibold">
               Junior Developer Intern • Runforservice
             </p>
-            <p class="text-[#350764]">
+            <p class="text-[#350764] about-text">
               Specialize in creating responsive and user-friendly web pages for
               e-commerce platforms, collaborate with backend teams to ensure
               seamless API integration and accurate data rendering. Work closely
@@ -206,7 +230,7 @@
 
       <!-- Skills Section -->
       <div id="skills" class="animated-section flex flex-col">
-        <span class="px-10 font-bold text-4xl text-[#a20f40] py-10"
+        <span class="px-10 section font-bold text-4xl text-[#a20f40] py-10"
           >SKILLS</span
         >
 
@@ -363,7 +387,7 @@
 
       <!-- Project Section -->
       <div id="projects" class="py-20 z-0">
-        <span class="text-4xl relative px-10 font-bold text-[#a20f40]"
+        <span class="text-4xl section relative px-10 font-bold text-[#a20f40]"
           >PROJECTS</span
         >
         <div class="grid grid-cols-1 md:grid-cols-2 flex-wrap">
@@ -430,7 +454,7 @@
       <!-- Contact Section  -->
       <div id="contact" class="flex flex-col items-center justify-center">
         <span
-          class="px-10 font-bold w-full items-start flex text-4xl text-[#a20f40] py-10"
+          class="px-10 font-bold w-full items-start flex text-4xl text-[#a20f40] section py-10"
           >CONTACT</span
         >
         <form
@@ -547,7 +571,7 @@
       </div>
 
       <!-- Footer Section -->
-      <div class="pt-10" style="background: url(/Images/Vector\ 5.png)">
+      <div class="footer pt-10">
         <div>
           <!-- Name -->
           <div class="flex w-full pt-3 justify-center items-center">
@@ -558,50 +582,89 @@
           <div class="px-10 py-4 mb-4 flex flex-wrap">
             <!-- Slogan Heading & Copyright -->
             <div class="w-full text-left lg:text-center lg:flex-1">
-              <p class="text-[55px] lg:text-7xl text-[#350764] font-bold">
+              <p
+                class="text-[55px] slogan-text lg:text-7xl text-[#350764] font-bold"
+              >
                 Stay Coder!
               </p>
               <!-- Copyright -->
-              <p class="py-4 text-[#a055f7] text-lg">
+              <p class="py-4 copyright-text text-[#a055f7] text-lg">
                 Copyright &copy Susmita Nayak 2024. All rights reserved.
               </p>
             </div>
 
-            <!--Social icons-->
+            <!-- Social icons -->
             <div
               class="flex items-start lg:items-center w-full lg:flex-1 py-2 flex-col"
             >
               <p
-                class="text-2xl text-left lg:text-center text-[#350764] font-bold"
+                class="text-2xl social-text text-left lg:text-center text-[#350764] font-bold"
               >
                 Find Me on Social Media <br />
                 Let’s Share Ideas and Insights!
               </p>
               <div class="flex space-x-3 py-3 items-center">
                 <a href="https://www.linkedin.com/in/susmita-nayak-212924272/">
-                  <img class="w-10" src="/Images/linkedin.png" alt=""
-                /></a>
+                  <!-- Light Mode -->
+                  <img
+                    class="w-10 light-mode"
+                    src="/Images/linkedin.png"
+                    alt="LinkedIn"
+                  />
+                  <!-- Dark Mode -->
+                  <img
+                    class="w-10 dark-mode"
+                    src="/Images/linkedin-dark.png"
+                    alt="LinkedIn Dark"
+                  />
+                </a>
                 <a href="https://x.com/CSSassyGirl">
-                  <img class="w-8" src="/Images/Twitter.png" alt=""
-                /></a>
+                  <img
+                    class="w-8 light-mode"
+                    src="/Images/Twitter.png"
+                    alt="Twitter"
+                  />
+                  <img
+                    class="w-8 dark-mode"
+                    src="/Images/Twitter-dark.png"
+                    alt="Twitter Dark"
+                  />
+                </a>
                 <a href="https://www.instagram.com/shcodify/">
-                  <img class="w-9" src="/Images/instagram.png" alt=""
-                /></a>
+                  <img
+                    class="w-9 light-mode"
+                    src="/Images/instagram.png"
+                    alt="Instagram"
+                  />
+                  <img
+                    class="w-9 dark-mode"
+                    src="/Images/instagram-dark.png"
+                    alt="Instagram Dark"
+                  />
+                </a>
                 <a href="mailto:susmitanayak2901@gmail.com">
-                  <img class="w-10" src="/Images/gmail.png" alt=""
-                /></a>
+                  <img
+                    class="w-10 light-mode"
+                    src="/Images/gmail.png"
+                    alt="Gmail"
+                  />
+                  <img
+                    class="w-10 dark-mode"
+                    src="/Images/gmail-dark.png"
+                    alt="Gmail Dark"
+                  />
+                </a>
               </div>
             </div>
-            <!--#E8E262 -->
+
             <!-- Navigation -->
             <div
               class="flex w-full lg:flex-1 items-start lg:items-center flex-col"
             >
-              <p class="text-2xl text-[#350764] font-bold">Explore</p>
+              <p class="text-2xl explore text-[#350764] font-bold">Explore</p>
               <div class="flex flex-col items-start">
-                <!-- Individual list -->
                 <div
-                  class="flex text-lg text-[#a055f7] hover:text-[#8a113c] space-x-2 items-center"
+                  class="flex text-lg nav-li text-[#a055f7] hover:text-[#8a113c] space-x-2 items-center"
                 >
                   <a
                     href="#"
@@ -611,7 +674,7 @@
                   >
                 </div>
                 <div
-                  class="flex text-lg text-[#a055f7] space-x-2 items-center hover:text-[#8a113c]"
+                  class="flex text-lg nav-li text-[#a055f7] space-x-2 items-center hover:text-[#8a113c]"
                 >
                   <a
                     href="#"
@@ -621,7 +684,7 @@
                   >
                 </div>
                 <div
-                  class="flex text-lg text-[#a055f7] space-x-2 items-center hover:text-[#8a113c]"
+                  class="flex text-lg nav-li text-[#a055f7] space-x-2 items-center hover:text-[#8a113c]"
                 >
                   <a
                     href="#"
@@ -631,7 +694,7 @@
                   >
                 </div>
                 <div
-                  class="flex text-lg text-[#a055f7] space-x-2 items-center hover:text-[#8a113c]"
+                  class="flex text-lg nav-li text-[#a055f7] space-x-2 items-center hover:text-[#8a113c]"
                 >
                   <a
                     href="#"
@@ -641,7 +704,7 @@
                   >
                 </div>
                 <div
-                  class="flex text-lg text-[#a055f7] space-x-2 items-center hover:text-[#8a113c]"
+                  class="flex text-lg nav-li text-[#a055f7] space-x-2 items-center hover:text-[#8a113c]"
                 >
                   <a
                     href="#"

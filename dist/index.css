@@ -59,6 +59,104 @@ html {
   border-radius: 10px;
 }
 
+/* Dark / Light mode */
+
+body.dark {
+  background: #090112;
+}
+
+body.dark .text-container .text {
+  color: #c20e43;
+}
+body.dark .text-container .sec-text {
+  color: #d9b4fe;
+}
+
+body.dark .buttons {
+  border: 2px solid #d9b4fe;
+  color: #d9b4fe;
+}
+body.dark .buttons:hover {
+  background: #d9b4fe;
+  color: #350764;
+}
+
+body.dark .intro-text {
+  color: #ffe3e7;
+}
+
+body.dark .about-text {
+  color: #ffe3e7;
+}
+
+body.dark .skillTitle {
+  color: #ffe3e7;
+}
+
+body.dark #projectTitle {
+  color: #ffe3e7;
+}
+
+body.dark #projectDescription {
+  color: #ffe3e7;
+}
+body.dark #techStackContainer {
+  color: #8a113c;
+}
+
+body.dark .section {
+  color: #a655f7;
+}
+body.dark .bg {
+  background: linear-gradient(to right, #f3e8ff, #d9b4fe);
+}
+body.dark .slider {
+  background: #511c87;
+}
+.footer {
+  background-image: url("/Images/Vector 5.png");
+}
+
+body.dark .footer {
+  background-image: url("/Images/dark-bg.png");
+}
+
+body.dark .slogan-text {
+  color: #ffa2b3;
+}
+
+body.dark .copyright-text {
+  color: #ffe3e7;
+}
+
+body.dark .social-text {
+  color: #ffa2b3;
+}
+
+body.dark .explore {
+  color: #ffa2b3;
+}
+
+body.dark .nav-li {
+  color: #ffe3e7;
+}
+
+.light-mode {
+  display: block;
+}
+
+.dark-mode {
+  display: none;
+}
+
+body.dark .light-mode {
+  display: none;
+}
+
+body.dark .dark-mode {
+  display: block;
+}
+
 /* Home Section */
 
 .text-container {

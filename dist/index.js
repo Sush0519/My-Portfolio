@@ -19,9 +19,12 @@ hamburger.addEventListener("click", function () {
   }
 });
 
+// Dark / Light mode
+
 function toggleIcons() {
   const sunIcon = document.getElementById("sunIcon");
   const moonIcon = document.getElementById("moonIcon");
+  const body = document.body;
 
   if (sunIcon.classList.contains("hidden")) {
     sunIcon.classList.remove("hidden");
@@ -30,6 +33,8 @@ function toggleIcons() {
     sunIcon.classList.add("hidden");
     moonIcon.classList.remove("hidden");
   }
+  body.classList.toggle("dark");
+  updateDescription(currentProjectId);
 }
 
 // Home Section
@@ -151,18 +156,21 @@ function updateDescription(id) {
   projectTitle.textContent = project.title;
   projectDescription.textContent = project.description;
 
-  // Clear previous tech stack and add new ones
-  techStackContainer.innerHTML = ""; // Clear previous tech stack
+  techStackContainer.innerHTML = "";
+
+  const isDarkMode = document.body.classList.contains("dark-mode");
+
   project.techStack.forEach((tech) => {
     const techItem = document.createElement("div");
-    techItem.classList.add(
-      "rounded-full",
-      "mx-1",
-      "my-2",
-      "px-4",
-      "py-2",
-      "bg-[#d9b4fe]"
-    );
+    techItem.classList.add("rounded-full", "mx-1", "my-2", "px-4", "py-2");
+
+    // Change the background color based on dark mode
+    if (isDarkMode) {
+      techItem.classList.add("bg-[#ffa2b3]");
+    } else {
+      techItem.classList.add("bg-[#d9b4fe]");
+    }
+
     techItem.textContent = tech;
     techStackContainer.appendChild(techItem);
   });
