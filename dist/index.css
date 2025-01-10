@@ -157,6 +157,10 @@ body.dark .dark-mode {
   display: block;
 }
 
+body.dark .carousel-text {
+  color: #ffa2b3;
+}
+
 /* Home Section */
 
 .text-container {
