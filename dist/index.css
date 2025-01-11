@@ -51,7 +51,11 @@ html {
 /* Navbar-Hamburger Section */
 
 #menu {
-  background: linear-gradient(to right, #bfaadb, #ffc0cb);
+  background: linear-gradient(
+    to right,
+    rgba(191, 170, 219, 0.9),
+    rgba(255, 192, 203, 0.9)
+  );
 }
 #menu li:hover {
   background-color: rgb(246, 219, 243);
@@ -70,6 +74,10 @@ body.dark .text-container .text {
 }
 body.dark .text-container .sec-text {
   color: #d9b4fe;
+}
+
+body.dark .hamburger-li {
+  color: #faf5ff;
 }
 
 body.dark .buttons {

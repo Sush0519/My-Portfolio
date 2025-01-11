@@ -94,7 +94,9 @@
           id="menu"
           class="w-[12rem] rounded-b-md hidden absolute top-[4.5rem] right-4 h-[19rem]"
         >
-          <ul class="flex-col text-[#5c3e74] px-5 py-2 flex items-center">
+          <ul
+            class="flex-col font-semibold hamburger-li text-[#5c3e74] px-5 py-2 flex items-center"
+          >
             <li class="border-b-[1px] py-4 w-full text-center">
               <a href="#" data-target="home" onclick="scrollToSection(event)"
                 >Home</a
@@ -131,14 +133,14 @@
       <div id="home" class="flex justify-center h-screen overflow-hidden">
         <div class="flex-col justify-center items-center flex px-8 py-2">
           <!-- Photo -->
-          <div class="justify-center w-full items-center flex">
+          <div class="justify-center mt-2 md:mt-1 w-full items-center flex">
             <img
-              class="w-80 object-cover light-mode rounded-full"
+              class="w-64 md:w-80 object-cover light-mode rounded-full"
               src="/Images/Profile-logo-light.png"
               alt=""
             />
             <img
-              class="w-80 object-cover dark-mode rounded-full"
+              class="w-64 md:w-80 object-cover dark-mode rounded-full"
               src="/Images/Profile-logo2.png"
               alt=""
             />
@@ -197,7 +199,7 @@
             <p class="text-lg text-[#fe6e8b] flex-1">Oct 2024 — PRESENT</p>
           </div>
           <div class="flex-col flex-1">
-            <p class="text-xl text-[#fe6e8b] font-semibold">
+            <p class="text-xl md:ml-2 text-[#fe6e8b] font-semibold">
               Junior Developer Intern • Runforservice
             </p>
             <p class="text-[#350764] about-text">
@@ -404,14 +406,15 @@
             <div class="swiper mySwiper">
               <div class="swiper-wrapper">
                 <div class="swiper-slide" data-id="0">
-                  <a
-                    href="https://next-js-weather-app-git-main-susmita-nayaks-projects.vercel.app/"
-                  >
+                  <a href="https://chat-web-app-using-react.vercel.app/">
+                    >
                     <img class="object-cover" src="/Images/Project 1.png" />
                   </a>
                 </div>
                 <div class="swiper-slide" data-id="1">
-                  <a href="https://binge-verse.netlify.app/">
+                  <a
+                    href="https://next-js-weather-app-git-main-susmita-nayaks-projects.vercel.app/"
+                  >
                     <img class="object-cover" src="/Images/Project 2.png" />
                   </a>
                 </div>
@@ -423,7 +426,7 @@
                   </a>
                 </div>
                 <div class="swiper-slide" data-id="3">
-                  <a href="https://chat-web-app-using-react.vercel.app/">
+                  <a href="https://binge-verse.netlify.app/">
                     <img class="object-cover" src="/Images/Project 4.png" />
                   </a>
                 </div>
