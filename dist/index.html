@@ -60,40 +60,11 @@
                 >Contact</a
               >
             </li>
-            <!-- Dark / Light Mode -->
-            <div
-              class="flex items-center"
-              id="toggleIcon"
-              onclick="toggleIcons()"
-            >
-              <img
-                id="sunIcon"
-                class="w-6 h-6"
-                src="/Images/sun.png"
-                alt="Sun Icon"
-              />
-              <img
-                id="moonIcon"
-                class="w-6 h-6 hidden"
-                src="/Images/moon.png"
-                alt="Moon Icon"
-              />
-            </div>
           </ul>
-        </div>
-        <!-- hamburger -->
-        <div
-          id="hamburger"
-          class="ml-auto hamburger md:hidden items-center flex"
-        >
-          <i
-            id="hamburger-icon"
-            class="fa-solid fa-burger text-[2rem] text-white"
-          ></i>
         </div>
         <!-- Dark / Light Mode -->
         <div
-          class="flex ml-2 items-center"
+          class="flex ml-auto items-center md:ml-4"
           id="toggleIcon"
           onclick="toggleIcons()"
         >
@@ -110,11 +81,20 @@
             alt="Moon Icon"
           />
         </div>
+        <!-- Hamburger -->
+        <div id="hamburger" class="hamburger ml-4 md:hidden items-center flex">
+          <i
+            id="hamburger-icon"
+            class="fa-solid fa-burger text-[2rem] text-white"
+          ></i>
+        </div>
+
+        <!-- Dropdown  -->
         <div
           id="menu"
           class="w-[12rem] rounded-b-md hidden absolute top-[4.5rem] right-4 h-[19rem]"
         >
-          <ul class="flex-col text-yellow-100 px-5 py-2 flex items-center">
+          <ul class="flex-col text-[#5c3e74] px-5 py-2 flex items-center">
             <li class="border-b-[1px] py-4 w-full text-center">
               <a href="#" data-target="home" onclick="scrollToSection(event)"
                 >Home</a
@@ -138,7 +118,7 @@
                 >Projects</a
               >
             </li>
-            <li class="border-b-[1px] py-4 w-full text-center">
+            <li class="py-4 w-full text-center">
               <a href="#" data-target="contact" onclick="scrollToSection(event)"
                 >Contact</a
               >
@@ -153,8 +133,13 @@
           <!-- Photo -->
           <div class="justify-center w-full items-center flex">
             <img
-              class="w-40 h-40 md:w-64 md:h-64 object-cover rounded-full"
-              src="/Images/photo.jpg"
+              class="w-80 object-cover light-mode rounded-full"
+              src="/Images/Profile-logo-light.png"
+              alt=""
+            />
+            <img
+              class="w-80 object-cover dark-mode rounded-full"
+              src="/Images/Profile-logo2.png"
               alt=""
             />
           </div>

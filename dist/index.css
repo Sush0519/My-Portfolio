@@ -51,7 +51,7 @@ html {
 /* Navbar-Hamburger Section */
 
 #menu {
-  background-color: rgba(218, 150, 235, 0.8);
+  background: linear-gradient(to right, #bfaadb, #ffc0cb);
 }
 #menu li:hover {
   background-color: rgb(246, 219, 243);
@@ -62,7 +62,7 @@ html {
 /* Dark / Light mode */
 
 body.dark {
-  background: #090112;
+  background: #1c1720;
 }
 
 body.dark .text-container .text {
@@ -73,12 +73,12 @@ body.dark .text-container .sec-text {
 }
 
 body.dark .buttons {
-  border: 2px solid #d9b4fe;
-  color: #d9b4fe;
+  border: 2px solid #ffc0cb;
+  color: #ffc0cb;
 }
 body.dark .buttons:hover {
-  background: #d9b4fe;
-  color: #350764;
+  background: #ffc0cb;
+  color: #a20f40;
 }
 
 body.dark .intro-text {
