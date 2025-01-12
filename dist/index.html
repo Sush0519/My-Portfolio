@@ -440,122 +440,138 @@
       </div>
 
       <!-- Contact Section  -->
-      <div id="contact" class="flex flex-col items-center justify-center">
+      <div
+        id="contact"
+        class="flex px-10 flex-col items-center md:items-start justify-center"
+      >
         <span
-          class="px-10 font-bold w-full items-start flex text-4xl text-[#a20f40] section py-10"
+          class="font-bold w-full items-start flex text-4xl text-[#a20f40] section py-10"
           >CONTACT</span
         >
-        <form
-          id="contactForm"
-          action="https://api.web3forms.com/submit"
-          onsubmit="handleSubmit(event);checkInputs();"
-          method="POST"
-          class="flex justify-center text-white bg-[#cba0e8] rounded-2xl my-5 px-5 w-[360px] h-[600px] sm:w-[450px] flex-col"
-          novalidate
-        >
-          <!-- bg-[#cba0e8] -->
-          <div class="flex mb-8 mt-3 space-x-2">
-            <p class="text-3xl text-shadow font-bold text-white">Contact me</p>
-            <img src="/Images/rocket.png" alt="" />
+        <div class="flex w-full">
+          <div class="w-1/2">
+            <form
+              id="contactForm"
+              action="https://api.web3forms.com/submit"
+              onsubmit="handleSubmit(event);checkInputs();"
+              method="POST"
+              class="flex justify-center text-white bg-[#cba0e8] rounded-2xl my-5 px-5 w-[360px] h-[600px] sm:w-[450px] flex-col"
+              novalidate
+            >
+              <!-- bg-[#cba0e8] -->
+              <div class="flex mb-8 mt-3 space-x-2">
+                <p class="text-3xl text-shadow font-bold text-white">
+                  Contact me
+                </p>
+                <img src="/Images/rocket.png" alt="" />
+              </div>
+              <style>
+                .inner-shadow {
+                  background-color: #d7b1f0;
+                  /* background-color: #cba0e8; */
+                  box-shadow: inset -4px -4px 7px #c9acde,
+                    inset 4px 4px 5px rgba(88, 77, 100, 0.288);
+                }
+
+                input:-webkit-autofill,
+                input:-webkit-autofill:hover,
+                input:-webkit-autofill:focus,
+                input:-webkit-autofill:active {
+                  -webkit-box-shadow: 0 0 30px #d0a2cb inset !important;
+                  -webkit-text-fill-color: #b679de;
+                }
+
+                input:focus,
+                textarea:focus {
+                  background-color: #d1a6da;
+                }
+
+                .outer-shadow {
+                  box-shadow: -4px -4px 7px #cebadb,
+                    4px 4px 5px rgba(67, 58, 77, 0.288);
+                }
+
+                form {
+                  background-image: url("/Images/Background.png");
+                  /* opacity: 0.8; */
+                  background-position: center;
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                  background-clip: border-box;
+                }
+                .text-shadow {
+                  text-shadow: 3px 3px 4px rgb(180, 168, 168);
+                }
+              </style>
+              <input
+                type="hidden"
+                name="access_key"
+                value="fddf0729-3496-49be-a380-1f2f1bbf7e90"
+              />
+              <input
+                type="hidden"
+                name="subject"
+                value="New Submission from Web3Forms"
+              />
+              <input
+                type="checkbox"
+                name="botcheck"
+                id=""
+                style="display: none"
+              />
+
+              <!-- Name  -->
+              <div id="nameContainer" class="flex mb-5 flex-col">
+                <input
+                  class="px-2 placeholder:text-white inner-shadow focus:outline-none rounded-lg py-4"
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Your Name"
+                />
+                <span id="nameError" class="error text-[#f1da54]"></span>
+              </div>
+
+              <!-- Email -->
+              <div id="emailContainer" class="flex flex-col mb-5">
+                <input
+                  class="inner-shadow placeholder:text-white focus:outline-none rounded-lg px-2 py-4"
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Your Email"
+                />
+                <span id="emailError" class="error text-[#f1da54]"></span>
+              </div>
+
+              <input
+                class="px-2 mb-5 inner-shadow placeholder:text-white focus:outline-none rounded-lg py-4"
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="Subject"
+              />
+              <div id="messageContainer" class="flex flex-col mb-5">
+                <textarea
+                  class="resize-none inner-shadow placeholder:text-white focus:outline-none h-40 rounded-lg px-2 py-4"
+                  id="message"
+                  name="message"
+                  placeholder="Message"
+                ></textarea>
+                <span id="messageError" class="error text-[#f1da54]"></span>
+              </div>
+              <button
+                class="bg-[#ffa2b3] outer-shadow w-32 my-2 py-2 text-xl mx-auto font-bold rounded-full"
+                type="submit"
+              >
+                Send
+              </button>
+              <div class="flex justify-center" id="responseMessage"></div>
+            </form>
           </div>
-          <style>
-            .inner-shadow {
-              background-color: #d7b1f0;
-              /* background-color: #cba0e8; */
-              box-shadow: inset -4px -4px 7px #c9acde,
-                inset 4px 4px 5px rgba(88, 77, 100, 0.288);
-            }
 
-            input:-webkit-autofill,
-            input:-webkit-autofill:hover,
-            input:-webkit-autofill:focus,
-            input:-webkit-autofill:active {
-              -webkit-box-shadow: 0 0 30px #d0a2cb inset !important;
-              -webkit-text-fill-color: #b679de;
-            }
-
-            input:focus,
-            textarea:focus {
-              background-color: #d1a6da;
-            }
-
-            .outer-shadow {
-              box-shadow: -4px -4px 7px #cebadb,
-                4px 4px 5px rgba(67, 58, 77, 0.288);
-            }
-
-            form {
-              background-image: url("/Images/Background.png");
-              /* opacity: 0.8; */
-              background-position: center;
-              background-repeat: no-repeat;
-              background-size: cover;
-              background-clip: border-box;
-            }
-            .text-shadow {
-              text-shadow: 3px 3px 4px rgb(180, 168, 168);
-            }
-          </style>
-          <input
-            type="hidden"
-            name="access_key"
-            value="fddf0729-3496-49be-a380-1f2f1bbf7e90"
-          />
-          <input
-            type="hidden"
-            name="subject"
-            value="New Submission from Web3Forms"
-          />
-          <input type="checkbox" name="botcheck" id="" style="display: none" />
-
-          <!-- Name  -->
-          <div id="nameContainer" class="flex mb-5 flex-col">
-            <input
-              class="px-2 placeholder:text-white inner-shadow focus:outline-none rounded-lg py-4"
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Your Name"
-            />
-            <span id="nameError" class="error text-[#f1da54]"></span>
-          </div>
-
-          <!-- Email -->
-          <div id="emailContainer" class="flex flex-col mb-5">
-            <input
-              class="inner-shadow placeholder:text-white focus:outline-none rounded-lg px-2 py-4"
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Your Email"
-            />
-            <span id="emailError" class="error text-[#f1da54]"></span>
-          </div>
-
-          <input
-            class="px-2 mb-5 inner-shadow placeholder:text-white focus:outline-none rounded-lg py-4"
-            type="text"
-            id="subject"
-            name="subject"
-            placeholder="Subject"
-          />
-          <div id="messageContainer" class="flex flex-col mb-5">
-            <textarea
-              class="resize-none inner-shadow placeholder:text-white focus:outline-none h-40 rounded-lg px-2 py-4"
-              id="message"
-              name="message"
-              placeholder="Message"
-            ></textarea>
-            <span id="messageError" class="error text-[#f1da54]"></span>
-          </div>
-          <button
-            class="bg-[#ffa2b3] outer-shadow w-32 my-2 py-2 text-xl mx-auto font-bold rounded-full"
-            type="submit"
-          >
-            Send
-          </button>
-          <div class="flex justify-center" id="responseMessage"></div>
-        </form>
+          <div class="w-1/2">text</div>
+        </div>
       </div>
 
       <!-- Footer Section -->
