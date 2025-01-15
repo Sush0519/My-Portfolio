@@ -121,6 +121,16 @@ body.dark .bg {
 body.dark .slider {
   background: #511c87;
 }
+
+.contact-bg {
+  background-image: url("/Images/Contact-bg.png");
+  background-repeat: no-repeat;
+}
+body.dark .contact-bg {
+  background-image: url("/Images/Contact-bg-dark.png");
+  background-repeat: no-repeat;
+}
+
 .footer {
   background-image: url("/Images/Vector 5.png");
 }
