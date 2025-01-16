@@ -19,6 +19,24 @@ hamburger.addEventListener("click", function () {
   }
 });
 
+document.addEventListener("click", function (event) {
+  const isClickInsideMenu = menu.contains(event.target);
+  const isClickOnHamburger = hamburger.contains(event.target);
+
+  if (!isClickInsideMenu && !isClickOnHamburger && isMenuOpen) {
+    isMenuOpen = false; // Close menu state
+    hamburgerIcon.classList.remove("fa-times");
+    hamburgerIcon.classList.add("fa-burger"); // Change back to hamburger icon
+    menu.classList.add("hidden"); // Hide menu
+  }
+});
+
+// logo refresh
+
+document.getElementById("logo").addEventListener("click", function () {
+  window.location.reload();
+});
+
 // Dark / Light mode
 
 function toggleIcons() {
