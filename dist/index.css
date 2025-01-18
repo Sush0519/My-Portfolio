@@ -5,7 +5,7 @@ html {
 
 @font-face {
   font-family: Verily Serif;
-  src: url("./Fonts/supernatural_knight/Supernatural_Knight.ttf") format("ttf");
+  src: url("./supernatural_knight/Supernatural_Knight.ttf") format("ttf");
 }
 
 .font {
@@ -120,20 +120,20 @@ body.dark .slider {
 }
 
 .contact-bg {
-  background-image: url("/dist/Images/Contact-bg.png");
+  background-image: url("/dist/Contact-bg.png");
   background-repeat: no-repeat;
 }
 body.dark .contact-bg {
-  background-image: url("/dist/Images/Contact-bg-dark.png");
+  background-image: url("/dist/Contact-bg-dark.png");
   background-repeat: no-repeat;
 }
 
 .footer {
-  background-image: url("/dist/Images/Vector 5.png");
+  background-image: url("/dist/Vector 5.png");
 }
 
 body.dark .footer {
-  background-image: url("/dist/Images/dark-bg.png");
+  background-image: url("/dist/dark-bg.png");
 }
 
 body.dark .slogan-text {
