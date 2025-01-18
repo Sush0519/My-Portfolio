@@ -5,7 +5,7 @@ html {
 
 @font-face {
   font-family: Verily Serif;
-  src: url("../Fonts/supernatural_knight/Supernatural_Knight.ttf") format("ttf");
+  src: url("./Fonts/supernatural_knight/Supernatural_Knight.ttf") format("ttf");
 }
 
 .font {
@@ -44,9 +44,6 @@ html {
   position: absolute;
   transition: transform 0.1s ease-out;
 }
-
-/* @media (max-width: ) {
-} */
 
 /* Navbar-Hamburger Section */
 
@@ -123,20 +120,20 @@ body.dark .slider {
 }
 
 .contact-bg {
-  background-image: url("/Images/Contact-bg.png");
+  background-image: url("/dist/Images/Contact-bg.png");
   background-repeat: no-repeat;
 }
 body.dark .contact-bg {
-  background-image: url("/Images/Contact-bg-dark.png");
+  background-image: url("/dist/Images/Contact-bg-dark.png");
   background-repeat: no-repeat;
 }
 
 .footer {
-  background-image: url("/Images/Vector 5.png");
+  background-image: url("/dist/Images/Vector 5.png");
 }
 
 body.dark .footer {
-  background-image: url("/Images/dark-bg.png");
+  background-image: url("/dist/Images/dark-bg.png");
 }
 
 body.dark .slogan-text {
@@ -309,9 +306,6 @@ body.dark .carousel-text {
 }
 
 /* Project Section */
-#projectTitle {
-  /* text-shadow: 0.5px 0.5px 3px rgb(141, 134, 134); */
-}
 
 .swiper-cube .swiper-cube-shadow {
   display: none;
@@ -392,9 +386,4 @@ body.dark .carousel-text {
 
 .shiny:hover:before {
   transform: rotate(-20deg) translate(140px, 10px);
-}
-
-/* Skills Section  */
-.skillTitle {
-  /* text-shadow: 0.5px 0.5px 3px rgb(141, 134, 134); */
 }
