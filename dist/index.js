@@ -375,3 +375,61 @@ document.addEventListener("mousemove", (event) => {
     pupil.style.transform = `translate(${x}px, ${y}px)`;
   });
 });
+
+// Contact Animation
+document.addEventListener("DOMContentLoaded", () => {
+  const leftDiv = document.querySelector(".left-div"); // Left div
+  const rightDiv = document.querySelector(".right-div"); // Right div
+
+  // Function to check if window size is larger than lg breakpoint
+  function isLargeScreen() {
+    return window.matchMedia("(min-width: 1024px)").matches;
+  }
+
+  // Apply animations when large screen and elements come into view
+  function applyAnimations() {
+    if (!isLargeScreen()) {
+      leftDiv.style.transform = "none";
+      rightDiv.style.transform = "none";
+      leftDiv.style.opacity = "1";
+      rightDiv.style.opacity = "1";
+      leftDiv.style.transition = "none";
+      rightDiv.style.transition = "none";
+      return;
+    }
+
+    // Set transitions for transform and opacity
+    leftDiv.style.transition =
+      "transform 1s ease-in-out, opacity 1s ease-in-out";
+    rightDiv.style.transition =
+      "transform 1s ease-in-out, opacity 1s ease-in-out";
+
+    // Initial positions and opacity
+    leftDiv.style.transform = "translateX(-5.6%)";
+    rightDiv.style.transform = "translateX(5.6%)";
+    leftDiv.style.opacity = "0";
+    rightDiv.style.opacity = "0";
+
+    // Trigger animations when scrolling
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            leftDiv.style.transform = "translateX(0)";
+            rightDiv.style.transform = "translateX(0)";
+            leftDiv.style.opacity = "1";
+            rightDiv.style.opacity = "1";
+          }
+        });
+      },
+      { threshold: 0.3 } // Adjust the threshold as needed
+    );
+
+    observer.observe(leftDiv);
+    observer.observe(rightDiv);
+  }
+
+  // Run the animations check on page load and window resize
+  applyAnimations();
+  window.addEventListener("resize", applyAnimations);
+});

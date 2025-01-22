@@ -5,7 +5,7 @@ html {
 
 @font-face {
   font-family: Verily Serif;
-  src: url("/Images/Fonts/supernatural_knight/Supernatural_Knight.ttf")
+  src: url("/dist/Fonts/supernatural_knight/Supernatural_Knight.ttf")
     format("ttf");
 }
 
@@ -231,6 +231,10 @@ body.dark .carousel-text {
   width: 100%;
   min-width: calc(var(--width) * var(--quantity));
   position: relative;
+}
+
+.slider .list p {
+  font-family: Verily Serif;
 }
 
 .slider .list .item {
