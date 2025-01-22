@@ -1,17 +1,17 @@
 {
   "name": "tailwind",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+    "dev": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "build": "tailwindcss -i ./src/input.css -o ./dist/output.css",
+    "clean": "rm -rf dist/*",
+    "start": "npm run clean && npm run build && npm run dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "editor.wordWrap": "on",
-  "editor.wordWrapColumn": 0,
-  "editor.wrappingIndent": "same",
   "author": "",
   "license": "ISC",
-  "description": "",
   "devDependencies": {
     "tailwindcss": "^3.4.4"
   }
