@@ -405,8 +405,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "transform 1s ease-in-out, opacity 1s ease-in-out";
 
     // Initial positions and opacity
-    leftDiv.style.transform = "translateX(-5.6%)";
-    rightDiv.style.transform = "translateX(5.6%)";
+    leftDiv.style.transform = "translateX(-5.5%)";
+    rightDiv.style.transform = "translateX(5.5%)";
     leftDiv.style.opacity = "0";
     rightDiv.style.opacity = "0";
 
