@@ -205,10 +205,10 @@ body.dark .carousel-text {
 /* Home Section */
 
 .text-container {
-  display: inline-flex; /* Ensures both spans are aligned horizontally */
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 100%; /* Adjust if necessary */
+  width: 100%;
 }
 
 .text-container .text {
