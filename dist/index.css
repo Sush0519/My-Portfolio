@@ -124,6 +124,12 @@ body.dark .skillTitle {
 body.dark #projectTitle {
   color: #ffe3e7;
 }
+body.dark #projectSubTitle1 {
+  color: #ffe3e7;
+}
+body.dark #projectSubTitle2 {
+  color: #ffe3e7;
+}
 
 body.dark #projectDescription {
   color: #ffe3e7;
