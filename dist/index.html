@@ -394,66 +394,72 @@
       </div>
 
       <!-- Project Section -->
-      <div id="projects" class="py-10 z-0">
+      <div id="projects" class="py-10 flex-col z-0">
         <span class="text-4xl section relative px-10 font-bold text-[#a20f40]"
           >PROJECTS</span
         >
-        <div class="grid grid-cols-1 md:grid-cols-2 pb-20 flex-wrap">
-          <!-- Project Descp -->
-          <div
-            id="animated-descp"
-            class="px-10 py-5 opacity-0 transform -translate-x-[15%] transition-all duration-[2.2s] flex flex-col items-center"
+        <div class="flex-col mt-10">
+          <span class="text-4xl px-10 section font-bold text-[#a20f40]"
+            >Frontend Projects</span
           >
-            <!-- Heading -->
-            <span
-              id="projectTitle"
-              class="text-3xl mt-5 font-extrabold text-[#350764]"
-            >
-            </span>
-            <!-- Info -->
-            <p
-              id="projectDescription"
-              class="text-center text-[#350764] py-3 text-xl"
-            ></p>
-            <!-- Tech Stack -->
-            <div
-              id="techStackContainer"
-              class="flex flex-wrap justify-center text-[#6421a8]"
-            ></div>
-          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 pb-20 flex-wrap">
+            <!-- Project Descp -->
 
-          <!-- Square Block -->
-          <div class="flex justify-center items-center">
-            <div class="swiper mySwiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide" data-id="0">
-                  <a href="https://chat-web-app-using-react.vercel.app/">
-                    <img class="object-cover" src="./Images/Project 1.png" />
-                  </a>
+            <div
+              id="animated-descp"
+              class="px-10 py-5 opacity-0 transform -translate-x-[15%] transition-all duration-[2.2s] flex flex-col items-center"
+            >
+              <!-- Heading -->
+              <span
+                id="projectTitle"
+                class="text-3xl mt-5 font-extrabold text-[#350764]"
+              >
+              </span>
+              <!-- Info -->
+              <p
+                id="projectDescription"
+                class="text-center text-[#350764] py-3 text-xl"
+              ></p>
+              <!-- Tech Stack -->
+              <div
+                id="techStackContainer"
+                class="flex flex-wrap justify-center text-[#6421a8]"
+              ></div>
+            </div>
+
+            <!-- Square Block -->
+            <div class="flex justify-center items-center">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide" data-id="0">
+                    <a href="https://chat-web-app-using-react.vercel.app/">
+                      <img class="object-cover" src="./Images/Project 1.png" />
+                    </a>
+                  </div>
+                  <div class="swiper-slide" data-id="1">
+                    <a
+                      href="https://next-js-weather-app-git-main-susmita-nayaks-projects.vercel.app/"
+                    >
+                      <img class="object-cover" src="./Images/Project 2.png" />
+                    </a>
+                  </div>
+                  <div class="swiper-slide" data-id="2">
+                    <a
+                      href="https://sellerapp-react-analytics-web-app.vercel.app/"
+                    >
+                      <img class="object-cover" src="./Images/Project 3.png" />
+                    </a>
+                  </div>
+                  <div class="swiper-slide" data-id="3">
+                    <a href="https://binge-verse.netlify.app/">
+                      <img class="object-cover" src="./Images/Project 4.png" />
+                    </a>
+                  </div>
                 </div>
-                <div class="swiper-slide" data-id="1">
-                  <a
-                    href="https://next-js-weather-app-git-main-susmita-nayaks-projects.vercel.app/"
-                  >
-                    <img class="object-cover" src="./Images/Project 2.png" />
-                  </a>
-                </div>
-                <div class="swiper-slide" data-id="2">
-                  <a
-                    href="https://sellerapp-react-analytics-web-app.vercel.app/"
-                  >
-                    <img class="object-cover" src="./Images/Project 3.png" />
-                  </a>
-                </div>
-                <div class="swiper-slide" data-id="3">
-                  <a href="https://binge-verse.netlify.app/">
-                    <img class="object-cover" src="./Images/Project 4.png" />
-                  </a>
-                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
               </div>
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-pagination"></div>
             </div>
           </div>
         </div>
@@ -467,21 +473,25 @@
               class="text-2xl text-[#350764] font-bold"
               >Social Media Posts</span
             >
-            <div class="flex-wrap md:flex mt-5 md:space-x-2">
+            <div class="flex-wrap justify-between md:flex mt-5 md:space-x-2">
               <div class="mb-4">
                 <img
-                  class="w-72"
+                  class="w-72 md:w-[25rem]"
                   src="./Images/Interior Deisng Ad.png"
                   alt=""
                 />
               </div>
 
               <div class="mb-4">
-                <img class="w-72" src="./Images/Nike AD.png" alt="" />
+                <img
+                  class="w-72 md:w-[25rem]"
+                  src="./Images/Nike AD.png"
+                  alt=""
+                />
               </div>
               <div class="mb-4">
                 <img
-                  class="w-72"
+                  class="w-72 md:w-[25rem]"
                   src="./Images/Floor Planning Ad2.png"
                   alt=""
                 />
@@ -498,7 +508,7 @@
             <div class="flex-wrap md:flex mt-5 md:space-x-2">
               <div class="mb-4">
                 <img
-                  class="w-72"
+                  class="w-[25rem]"
                   src="./Images/Instagram post - 2.png"
                   alt=""
                 />
@@ -506,7 +516,7 @@
 
               <div class="mb-4">
                 <img
-                  class="w-72"
+                  class="w-[25rem]"
                   src="./Images/Instagram post - 3.png"
                   alt=""
                 />
